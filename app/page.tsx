@@ -61,25 +61,37 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-primary-600 to-primary-800 text-white py-20 md:py-32">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Your Health, Our Priority
+      <section className="relative bg-gradient-to-r from-primary-600 to-primary-800 text-white pt-12 md:pt-16 lg:pt-20 pb-20 md:pb-32 lg:pb-40 overflow-hidden">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-gradient-to-r from-primary-600/45 via-primary-700/40 to-primary-800/35 z-10"></div>
+          <div className="absolute right-0 top-0 bottom-0 w-full md:w-2/5 lg:w-2/5 xl:w-1/3">
+            <img
+              src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=90"
+              alt="Medical professionals providing healthcare"
+              className="w-full h-full object-cover object-center brightness-105 contrast-105"
+            />
+          </div>
+        </div>
+        
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+          <div className="max-w-3xl md:max-w-2xl lg:max-w-xl mx-auto md:mx-0 text-center md:text-left pr-0 md:pr-8 lg:pr-12 xl:pr-16">
+            <h1 className="font-poppins text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-5 md:mb-6 lg:mb-7 leading-[1.1] md:leading-[1.15] tracking-tight">
+              Your Health,Our Priority
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-primary-100">
+            <p className="font-sans text-base md:text-lg lg:text-xl xl:text-2xl mb-8 md:mb-10 lg:mb-12 text-primary-100 max-w-xl mx-auto md:mx-0 leading-relaxed md:leading-relaxed">
               World-class multi-specialty healthcare with compassion and excellence
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 md:gap-5 justify-center md:justify-start items-stretch sm:items-center">
               <Link
                 href="/appointments"
-                className="bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold hover:bg-primary-50 transition-colors text-center"
+                className="bg-white text-primary-600 px-7 md:px-9 lg:px-10 py-3.5 md:py-4 lg:py-5 rounded-lg font-semibold hover:bg-primary-50 transition-all duration-300 text-center text-base md:text-lg leading-normal shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 w-full sm:w-auto min-w-[180px] md:min-w-[200px]"
               >
                 Book Appointment
               </Link>
               <Link
                 href="/services"
-                className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-colors text-center"
+                className="border-2 border-white text-white px-7 md:px-9 lg:px-10 py-3.5 md:py-4 lg:py-5 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-all duration-300 text-center text-base md:text-lg leading-normal w-full sm:w-auto min-w-[180px] md:min-w-[200px]"
               >
                 Our Services
               </Link>

@@ -61,12 +61,6 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/appointments"
-              className="bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors font-medium"
-            >
-              Book Appointment
-            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -93,13 +87,6 @@ export default function Header() {
                   {link.label}
                 </Link>
               ))}
-              <Link
-                href="/appointments"
-                className="bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors font-medium text-center"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Book Appointment
-              </Link>
             </div>
           </div>
         )}
